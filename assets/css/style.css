@@ -1,0 +1,137 @@
+
+
+
+body {
+    background-color: rgb(33, 33, 87);
+    background-image: url("../images/Space-Galaxy.jpg");
+	margin: 0px;
+    padding: 0px;
+    font-family: 'Merienda', cursive, 'Marck Script';
+}
+
+.header {
+	
+    color: white;
+    padding: 20px;
+}
+
+.bg-style {
+    background-image: url("../images/treegem.jpg");
+    width: 700px;
+    max-width: 100%;   
+}
+
+.main-random-number {
+    margin-top: 100px;
+  padding-top: 20px;
+	font-size: 40px;
+    background-color: rgb(250, 209, 159, 0.7);
+    padding-bottom: 20px;
+    font-size: 40px;
+    border-radius: 60px;
+	
+
+ 
+}
+
+.win-lose-counter {
+   
+	background-color: rgba(48, 97, 97, 0.8);
+	border-style: dotted;
+	/* border-color: #ddd; */
+    border-width: 2px;
+    padding-top: 10px;
+    color: #fff;
+    border-radius: 40px;
+    
+}
+
+.crystal-images {
+	margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.total-score {
+   
+	color: white;
+    background-color: rgba(105, 52, 129, 0.7);
+    padding-top:10px;
+    border-style: dotted;
+    border-radius: 10px;
+}
+
+.score-number {
+  
+	color: white;
+	background-color: rgba(105, 52, 129, 0.7);
+    font-size: 25px;
+    border-style: dotted;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    
+}
+
+.howto-btn {
+    width: 100px;
+    height: 100px;
+}
+.author{
+
+    color: rgb(255, 255, 255);
+    margin-top: -25px;
+    margin-left: 260px;
+    background-color: rgb(138, 44, 226,0.3);
+    border-radius: 7px;
+  
+    
+}
+
+.separate{
+
+    color: rgb(255, 255, 255);
+    margin-top: -25px;
+
+    background-color: rgb(138, 44, 226,0.3);
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 35px;
+    
+}
+
+.main-number-row {
+    margin-top: -60px;
+}
+
+
+/* Tooldis container */
+.tooldis {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Tooldis text */
+.tooldis .tooldistext {
+    visibility: hidden;
+    width: 400px;
+    background-color: rgba(184, 243, 211, 0.7);
+    color: rgb(47, 12, 54);
+    text-align: left;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooldis:hover .tooldistext {
+    visibility: visible;
+}
