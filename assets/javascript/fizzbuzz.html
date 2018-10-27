@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+       // Make a for loop and go from 1 to 100
+       // Create a variable to store fizzbuzz string
+       // check if divisible by 3
+       // add fizz var
+       //console fizz
+       // check divisible by 5
+       // console buzz
+         // add fizz var
+    for (var i=1; i < 101; i++){
+    if ((i % 3 == 0) && (i % 5 == 0)) {console.log("FizzBuzz");} 
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+}
+
+
+ for (var i=1; i < 101; i++){
+     var fizzBuzzer =''; {
+
+     }
+
+
+// for loop from 1 to 1000
+// Where index = index
+     // start for loop with the number 2 to index-1
+     // check if modulus of 2 to index-1
+     //if no remainer it is not a prime number
+
+
+for (var index = 1; i<= 1000;  i++){
+    var factorial = true;
+    for (var j = 2; j < index; j++){
+        if (index % j === 0){
+            break;
+        }
+    }
+    if (!factorial) {
+        console.log(index);
+    }
+}
+
+
+// ------------------------------------------------------------------
+     function isPrime(num) {
+   for ( var i = 2; i < num; i++ ) {
+       if ( num % i === 0 ) {
+           return false;
+       }
+   }
+   return true;
+}
+
+function display(n) {
+   var arr = [2];
+   for ( var i = 3; i < n; i+=2 ) {
+       if ( isPrime(i) ) {
+           arr.push(i);
+       }
+   }
+   console.log(arr); // use arr result on your own
+}
+
+//display(100);
+
+    
+    </script> 
+</body>
+</html>

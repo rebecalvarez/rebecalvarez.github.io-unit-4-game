@@ -15,10 +15,10 @@ var wins = 0;
 var losses = 0;
 var counter = 0;
 var images = ["./assets/images/crystal1.gif", "./assets/images/crystal2.gif", "./assets/images/crystal3.gif", "./assets/images/crystal4.gif"];
-var c1Audio = new Audio("raven.mp3");
-var c2Audio = new Audio("raven.mp3");
-var c3Audio = new Audio("raven.mp3");
-var c4Audio = new Audio("raven.mp3");
+var audio = new Audio("./assets/audio/chime.wav");
+var loseaudio = new Audio("./assets/audio/lose.wav");
+var winneraudio = new Audio("./assets/audio/win.wav");
+
 // Functions
 
 	function randomTargetNumber () {
@@ -52,7 +52,7 @@ var c4Audio = new Audio("raven.mp3");
 
 // Running Code
 
-	// Inital Page Set Up
+	// Starting Page Set Up
 	randomTargetNumber();
 	resetHTML ();
 	resetCrystals ();
@@ -61,13 +61,16 @@ var c4Audio = new Audio("raven.mp3");
 	function crystalClick () {
 		//attr returns first value of selected html element
 		counter += parseInt($(this).attr("value"));
-		$(".score-number").html(counter);
+        $(".score-number").html(counter);
+        audio.play();
 		if (counter == MainRandomNumber) {
-			wins++;
+            wins++;
+            winneraudio.play();
 			totalReset();
 		}
 		else if (counter > MainRandomNumber) {
-			losses++;
+            losses++;
+            loseaudio.play();
 			totalReset();
 		};
 	};
